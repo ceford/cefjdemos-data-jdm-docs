@@ -1,4 +1,4 @@
-# Installation Notes
+<!-- Filename: Readme / Display title: Installation Notes -->
 
 Jdocmanual is designed to deliver Joomla documentation in an easy
 reference form. It can also be used for other custom documentation. Most
