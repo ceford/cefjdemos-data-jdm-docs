@@ -3,6 +3,7 @@
 ; manual=heading=filename
 
 heading=jdocmnanual=JDOC Manual
+docs=jdocmanual=readme.md
 docs=jdocmanual=introduction-to-jdocmanual.md
 docs=jdocmanual=source-data.md
 docs=jdocmanual=article-edit.md

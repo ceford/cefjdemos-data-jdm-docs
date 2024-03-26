@@ -1,12 +1,14 @@
 jdoc-reference=Words_to_Watch_Table=words-to-watch-table.md
 jdoc-reference=JEDL=jedl.md
 
+jdocmanual=Readme=readme.md
 jdocmanual=Introduction_to_Jdocmanual=introduction-to-jdocmanual.md
 jdocmanual=Source_Data=source-data.md
 jdocmanual=Article_Edit=article-edit.md
 jdocmanual=Article_new=article-new.md
 jdocmanual=Menu_Items=menu-items.md
 jdocmanual=Proxy_Server=proxy-server.md
+jdocmanual=Changelog=changelog.md
 
 jdoc-documentation=How_to_take_Screenshots_for_Joomla_Documentation=how-to-take-screenshots-for-joomla-documentation.md
 jdoc-documentation=Hatnotes=jdoc-hatnotes.md
