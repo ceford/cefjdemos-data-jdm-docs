@@ -15,7 +15,7 @@ For the second version the documents fetched from docs.joomla.org were
 converted to GitHub Flavoured Markdown and stored on GitHub. The contents
 of four different manuals were in the same repository. That led to memory
 and timeout problems when building the database tables. Building a new site
-and updating it later cumbersome.
+and updating it later was cumbersome.
 
 ## Version 1
 
