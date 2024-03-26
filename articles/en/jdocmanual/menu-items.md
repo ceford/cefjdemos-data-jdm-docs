@@ -1,4 +1,4 @@
-<!-- Filename: ... / Display title: Menu Items -->
+<!-- Filename: Menu_Items / Display title: Menu Items -->
 
 ## New Menu Item
 
@@ -13,7 +13,7 @@ code lines look like this:
 ; heading=heading=English Heading
 ; manual=heading=filename
 
-heading=jdocmnanual=JDOC Manual
+heading=jdocmanual=Jdocmanual
 docs=jdocmanual=introduction-to-jdocmanual.md
 docs=jdocmanual=source-data.md
 docs=jdocmanual=article-edit.md
