@@ -1,9 +1,12 @@
 <!-- Filename: Introduction_to_Jdocmanual / Display title: Introduction to Jdocmanual -->
 
+## About Jdocmanual
+
 Jdocmanual is a Joomla component designed to display articles organised for
 convenience with an Index to all articles at the left, the selected article
 content in the centre and a list of headings in the article to the right. Each
 collection of articles constitutes a Manual, of which there can be any number.
+
 The content of each article is stored in Markdown format. Four Joomla Manuals
 are available for demonstration purposes: ***Joomla User Manual***,
 ***Joomla Developer Manual***, ***Joomla Help Screens*** and ***Joomla
@@ -16,7 +19,7 @@ any language for which a translation is available.
 Jdocmanual has a default Manual view for the Administrator and a Site view
 using the same code. This is the Administrator view:
 
-![manual view](../../../images/en/jdocmanual/jdocmanual.png) "The Jdocmanual Manual View"
+![manual view](../../../images/en/jdocmanual/jdocmanual.png "The Jdocmanual Manual View")
 
 ### Manual and Language Selection
 

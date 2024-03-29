@@ -2,7 +2,7 @@
 
 ## Version 3.0.0
 
-- The date for the four default manuals are now in separate repositories.
+- The data for the four default manuals are now in separate repositories.
 - The database tables can be built directly from the Administrator interface.
 - Responsive image srcsets are generated for local images.
 - It is easy to update content locally with VSCodium or VScode, push changes

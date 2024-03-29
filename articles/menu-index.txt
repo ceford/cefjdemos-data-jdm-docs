@@ -3,9 +3,11 @@
 ; manual=heading=filename
 
 heading=jdocmanual=Jdocmanual
-docs=jdocmanual=readme.md
 docs=jdocmanual=introduction-to-jdocmanual.md
+docs=jdocmanual=installation-notes.md
 docs=jdocmanual=source-data.md
+docs=jdocmanual=markdown.md
+docs=jdocmanual=edit-with-vscode.md
 docs=jdocmanual=article-edit.md
 docs=jdocmanual=article-new.md
 docs=jdocmanual=menu-items.md

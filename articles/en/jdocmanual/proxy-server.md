@@ -6,16 +6,16 @@ In the Joomla configuration.php file is an entry that tells the installation whe
 It looks like this:
 
 ```php
-	public $helpurl = 'https://help.joomla.org/proxy?keyref=Help{major}{minor}:{keyref}&lang={langcode}';
+public $helpurl = 'https://help.joomla.org/proxy?keyref=Help{major}{minor}:{keyref}&lang={langcode}';
 ```
-To fetch an individual Help page the items in curly braces are replaced with the parameters for a specific 
+To fetch an individual Help page the items in curly braces are replaced with the parameters for a specific
 Help page. This is an example for the the Articles list:
 
 ```html
 https://help.joomla.org/proxy?keyref=Help43:Articles&lang=en
 ```
 
-The proxy server does some extra processing of a Help page to remove information not relevant in 
+The proxy server does some extra processing of a Help page to remove information not relevant in
 that context. For example, if the `lang` parameter is not `en` it checks to see if the page is available
 in that language. If not, it delivers the `en` version (English). Also, it removes the links used to edit
 sections of the source or the images.
