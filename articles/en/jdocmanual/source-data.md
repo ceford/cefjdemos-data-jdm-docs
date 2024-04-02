@@ -1,11 +1,46 @@
 <!-- Filename: Source_Data / Display title: Source Data -->
 
-## Local Storage Structure
+## Methods of Use
 
-The article data used by Jdocmanual are stored in four git repositories in
-GitHub Flavoured Markdown format (GFM). Ancillary data used for importing the
-data into Jdocmanual are stored in txt or ini files. Your downloaded and
-unzipped data files should be organised as follows::
+You need to think carefully about how you intend to use Jdocmanual. The
+alternatives:
+
+* Download source data updates From GitHub from time with no personal editing
+of the source data. You can download with Git or using a ZIP file.
+* Download updates with Git and resolve any conflicts with your own edits. For
+this you can use a local clone of the original GitHub data sources.
+* Download updates with Git and contribute your own edits to the original
+source. For this you will need to fork the original sources on GitHub and
+clone your fork locally. You will also need to create and checkout a Git branch
+to use for a pull request later.
+
+For the Jdocmanual site I use a local git clone of the GitHub repo, make any
+changes using VSCodium or VScode and test locally on my laptop. I then push
+the changes to the GitHub repository. On the Jdocmanual site I pull from
+GitHub and rebuild the articles and menus.
+
+Jdocmanual has an internal editing and revision control system and you may use
+that if you wish.
+
+## GitHub Storage Structure
+
+The article data used by Jdocmanual are stored GitHub Flavoured Markdown
+format (GFM) in four GitHub repositories. Ancillary data used for importing the
+data into Jdocmanual are stored in txt or ini files. The first level structure
+of each repository is like this:
+
+```
+cefjdemos-data-jdm-help
+    /articles
+    /images
+    /LICENCE
+    /README.md
+```
+
+## Jdocmanual and Local Site Structue
+
+The local cloned repositories need to be in a folder named `manuals` and with
+the short name of the repository, as follows:
 
 ```
 /manuals
@@ -32,7 +67,8 @@ unzipped data files should be organised as follows::
                     /hosting-apache-default-page.png
 ```
 The images folders are created as required for local images. The image names
-should start with the folder they are in.
+should start with the folder they are in. Note that each cloned repository
+folder contains a hidden `.git` folder for keeping track of changes using Git.
 
 ## Reason for Structure
 
@@ -44,13 +80,13 @@ the image path, for example `en` to `de` for the German translation.
 
 ## Image Sizes
 
-Images should be reduced to a standard resolution of 1 image pixel per screen
-pixel for a 1x resolution display, and to 1200 pixels wide if originally wider
-than that. For example, high resolution screens may use 1.5 or 2.0 screen
-pixels per image pixel. If you take a screen shot using a nominally 1440 pixel
-wide screen that has 2x resolution the captured image will be 2880 pixels
-wide. That is much larger than it needs to be, in pixels and storage bytes,
-and will impact site performance and storage requirements.
+During the article build process, each original image leads to the creation of
+six additional images at resolutions of 320, 768 and 1200 pixels wide in png or
+jpg format, depending on the original, and webp format. The image links in the
+markdown files are replaced with a picture tag that allows the browser to
+select the image most appropriate for the device resolution and capabilities.
+Original screenshots should be saved in png format with a compression factor
+of 7.
 
 ## Local Location of Sources
 
@@ -70,7 +106,7 @@ This is a complex problem! You may have set up Jdocmanual on a personal
 development server using localhost. Or you may be using a shared hosting
 server with no command line access or a VPS with full server access. Also,
 you may or may not be familiar with `git` and working with others to
-maintain a git repository.
+maintain a Git repository.
 
 Jdocmanual has an internal editing system that allows you to modify your
 sources, perhaps with the help of others. However, that may put you out of
@@ -91,29 +127,26 @@ the data sources listed above you will see a green button labelled `Code`.
 From the dropdown list select the `Clone using the web URL.` copy symbol.
 
 In a terminal window, change to your manuals folder and use the git clone
-command, for example:
+command. That will create a folder named `cefjdemos-data-jdm-docs`. You need
+to rename that folder to its short name, `docs`.  For example:
 ```bash
 cd /home/username/data/manuals
 git clone https://github.com/ceford/cefjdemos-data-jdm-docs.git
+mv cefjdemos-data-jdm-docs docs
 ```
-That will create a folder named `cefjdemos-data-jdm-docs`. You need to rename
-that folder to its short name, `docs`. To update your local repo at any time
-in the future you can change into that folder and issue a git command:
+To update your local repo at any time in the future you can change into
+that folder and issue a git command:
 ```bash
 cd /home/username/data/manuals/docs
 git pull
 ```
 Then build your articles and menus again.
 
-If you are going to make local changes to the manual content you will
-probably need to checkout a new branch, or fork the source repository and
-clone that. Too complicated to cover here!
-
 ### Download ZIP
 
 If you don't have git, quite likely on shared hosting, you can download a
 ZIP file from that green button on GitHub. Save the ZIP in your `manuals`
-foler and unzip it there. It will have a long filename, such as
+folder and unzip it there. It will have a long filename, such as
 `cefjdemos-data-jdm-docs` that you need to rename to its short form, `docs`.
 Then delete the ZIP file. You can download a new ZIP file from time to time
 and unpack it in the same way to keep your data up to data with the original
