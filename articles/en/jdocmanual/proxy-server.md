@@ -37,4 +37,3 @@ To use your own proxy all you need to do is change the `configuration.php` file 
 domain to that where Jdocmanual is installed. At the moment it delivers the same Help
 pages for Joomla 4 and Joomla 5. That will change when any differences become
 apparent.
-

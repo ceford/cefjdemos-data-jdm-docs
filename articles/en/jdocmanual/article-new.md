@@ -10,7 +10,7 @@ or you may enter a new heading. The heading must consist of lower case
 alphanumeric words separated by dashes. You will also notice that the
 `Page ID` is 0 (zero) as the page does not exist.
 
-![new article form](../../../images/en/jdocmanual/article-new.png) "New Article Form"
+![new article form](../../../images/en/jdocmanual/article-new.png "New Article Form")
 
 The `Stash` tab contains an empty edit field as there was no original content
 with which to initialise the content. It is always a good idea to start the new
