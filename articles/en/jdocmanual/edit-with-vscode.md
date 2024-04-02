@@ -132,3 +132,13 @@ articles and then the menus. They must be done in that order!
 ## Timeline and Translation
 
 A useful feature of VSCode is the Timeline at the bottom of the Explorer panel.
+This can show changes between repository commits. If you are translating the
+original English into German for example you can see what has changed since the
+last English commit and update the German translation accordingly.
+
+Here is an example showing the timeline for a German translation:
+
+![vscode timeline view](../../../images/en/jdocmanual/edit-with-vscode-translation.png "The Timeline View")
+
+In this example the author copied the English text into a new German document
+and then began translation paragraph by paragraph.
