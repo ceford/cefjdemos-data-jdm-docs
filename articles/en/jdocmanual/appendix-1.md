@@ -1,5 +1,3 @@
 <!-- Display title: Appendix 1 -->
 
-## Test Title
-
-Test text
+Some collected notes to deal with later!
