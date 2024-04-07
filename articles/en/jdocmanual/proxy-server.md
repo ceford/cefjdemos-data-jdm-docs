@@ -22,18 +22,19 @@ sections of the source or the images.
 
 ## The Jdocmanual Proxy Server
 
-There is a similar proxy server available with Jdocmanual. It is set up during installation using the
-command line interface, which is also used for updates.
+There is a similar proxy server available with Jdocmanual set up during installation of the Help manual.
 
-```bash
-php joomla.php jdocmanual:action buildproxy all all
-```
 The proxy server is a simple php script (index.php) in a proxy subfolder of the installed site.
 Subfolders are created for each available language. The Help pages are stored as individual
 HTML files. The proxy script looks for the desired language and either sends the Help page in
 that language or English if the original has not been translated.
 
 To use your own proxy all you need to do is change the `configuration.php` file `helpurl`
-domain to that where Jdocmanual is installed. At the moment it delivers the same Help
-pages for Joomla 4 and Joomla 5. That will change when any differences become
-apparent.
+to remove the domain part of the url. If Joomla is installed in a sub-folder make sure the
+subfolder name precedes /proxy. Example:
+
+```
+public $helpurl = '/jdm3/proxy?keyref=Help{major}{minor}:{keyref}&lang={langcode}';
+```
+At the moment the proxy delivers the same Help pages for Joomla 4 and Joomla 5. That may
+change in the future.
