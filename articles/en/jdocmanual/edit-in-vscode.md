@@ -1,4 +1,4 @@
-<!-- Filename: Edit_with_Vscode / Display title: Edit with VSCode -->
+<!-- Display title: Edit in VSCode -->
 
 ## About VSCode and VScodium
 

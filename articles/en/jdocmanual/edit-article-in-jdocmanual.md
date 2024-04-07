@@ -1,4 +1,4 @@
-<!-- Filename: Article_Edit / Display title: Article Edit -->
+<!-- Display title: Edit Article in Jdocmanual -->
 
 ## Updating an Article
 
@@ -10,11 +10,11 @@ is selected as  the language then the **Translated** column is not displayed.
 ![article stashes list](../../../images/en/jdocmanual/article-stashes.png "Article Stashes List")
 
 The stash copy is stored in the database until it is deleted or committed and
-merged into the git source. That allows you to come back to make changes over
+merged into the source. That allows you to come back to make changes over
 a period until you are satisfied with the revised content.
 
 If you already have a stash copy of an article there will be a green `Edit Stash` button.
-Otherwise there will be yellow `New Stash` button. When you create a new stash
+Otherwise there will be a yellow `New Stash` button. When you create a new stash
 the original markdown file will be copied for you to work on.
 
 The `New` button in the Toolbar, only available when English is selected,  is used to
@@ -25,18 +25,25 @@ Select the `New Stash` or `Edit Stash` button.
 
 ## The Article Edit Form
 
-The Article Edit form has a number of tabs. The `Details` tab is mostly **read
-only** data. However, the `Display Title` can be changed. On creating a new
-stash in German the Display Title will be in English. If a translation already
+The Article Edit form shows **Article Add** in the title bar for a new stash. It
+changes to **Article Edit** after saving. The `Details` tab is all **read
+only** data except for a new article in English. On creating a new stash in
+German the Display Title will be in English. If a translation already
 exists it will be whatever the previous translator set it to.
 
-![article edit](../../../images/en/jdocmanual/article-edit.png "Article Edit")
+![article edit](../../../images/en/jdocmanual/jdocmanual-article-edit.png "Article Edit")
 
-The `Stash` tab shows the original English text and German text side by side.
-If the selected language is English the tab shows just the English text. Note
-the first line is an HTML comment. This is actually used to set the Article
-title when building the database. There is no H1 in the Mediawiki articles.
-The display title is stored separately there.
+The `Stash` tab shows the original English text. For a translation the English
+and translated texts are displayed side by side.
+
+Note the first line is an HTML comment. This is **important** as it used to
+set the article `Display title` when building the database. The display title
+may be translated but nothing else in that line. The title is set like this
+because there is no H1 in Mediawiki articles. The display title is stored
+separately there.
+
+The following illustration shows a German translation with a translated article
+title.
 
 ![article stash english and german](../../../images/en/jdocmanual/article-stash-german.png "Article Stash English and German")
 
@@ -75,4 +82,8 @@ it has a `Commit` button in the Toolbar. If the Publisher is satisfied with
 the stash, a click on the button causes creation of a git branch followed by
 staging and committing the revised content. All in a single operation.
 
-ToDo: More explanation...
+## New Articles
+
+A new article can only be created in English via the New button in the Title
+bar, only present when English is selected in the Article Stashes list. It is
+covered in the next article.

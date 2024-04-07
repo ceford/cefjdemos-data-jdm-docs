@@ -45,17 +45,20 @@ the short name of the repository, as follows:
 ```
 /manuals
     /developer
-    /documenter
-    /help
-    /user
+    /docs
         /articles
             /de
             /en
-                /articles
-                /articles-metadata
-                ...
-                /users
-                /workflows
+                /jdoc-documentation
+                /jdoc-help
+                /jdoc-reference
+                /jdoc-translation
+                /jdocmanual
+                    changelog.md
+                    edit-article-in-jdocmanual.md
+                    edit-in-vscode.md
+                    ...
+                    source-data.md
                 menu-headings.ini
             ...
             /ru
@@ -63,8 +66,12 @@ the short name of the repository, as follows:
             menu-index.txt
         /images
             /en
-                /hosting
-                    /hosting-apache-default-page.png
+                /jdocmanual
+                    jdocmanual-article-edit.png
+                    ...
+                    jdocmanual.png
+    /help
+    /user
 ```
 The images folders are created as required for local images. The image names
 should start with the folder they are in. Note that each cloned repository
@@ -83,10 +90,9 @@ the image path, for example `en` to `de` for the German translation.
 During the article build process, each original image leads to the creation of
 six additional images at resolutions of 320, 768 and 1200 pixels wide in png or
 jpg format, depending on the original, and webp format. The image links in the
-markdown files are replaced with a picture tag that allows the browser to
+markdown files are replaced with picture tags that allow the browser to
 select the image most appropriate for the device resolution and capabilities.
-Original screenshots should be saved in png format with a compression factor
-of 7.
+Original screenshots should be saved in png format.
 
 ## Local Location of Sources
 
