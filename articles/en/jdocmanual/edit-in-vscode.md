@@ -50,7 +50,7 @@ This example shows work in progress on this article:
 Open and close folders as you would in any file manager application. If you are
 new to VSCode you may wish to review the tutorials and adjust your preferences.
 Select an article to edit. If you need a reminder of GFM format rules see the
-[Markdown](jdocmanual?manual=docs&heading=jdocmanual&filename=markdown.md)
+[Markdown](jdocmanual?article=docs/jdocmanual/markdown "Markdown")
 article. With an article active select Shift+cmd+V (on Mac) to open the
 Preview window. Note that internal links will not work in the Preview.
 

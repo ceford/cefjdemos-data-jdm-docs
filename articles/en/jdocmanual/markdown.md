@@ -81,10 +81,14 @@ folder before creating the link.
 Any links to Jdocmanual pages, Mediawiki pages and other website pages should
 be like these examples:
 
-<pre><code>&#91;Hosting Setup]&#40;jdocmanual?manual=user&heading=getting-started&filename=hosting-setup.md "Internal link")
+<pre><code>&#91;Hosting Setup]&#40;jdocmanual?article=user/getting-started/hosting-setup "Hosting Setup")
 &#91;Content Editors]&#40;https://docs.joomla.org/Special:MyLanguage/Content_creators#Content_Editors "Anchor in Content creators")
 &#91;Joomla]&#40;https://www.joomla.org/ "The main Joomla website")
 </code></pre>
+
+The text within square brackets is the link text. The item in quotes is the link title.
+
+The jdocmanual links have the manual, heading and filename (without .md) separated by a slash (/).
 
 **Note:** Images have an initial bang (!). Links don't.
 
